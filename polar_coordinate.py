@@ -22,3 +22,8 @@ def simulate_flow_past_cylinder(U, a, K_values, n_points=100):
 
     plt.tight_layout()
     plt.show()
+    
+U = 1.0
+a = 1.0
+K_values = [0, 1.0 * U * a, 2.0 * U * a, 3.0 * U * a]
+simulate_flow_past_cylinder(U, a, K_values)
